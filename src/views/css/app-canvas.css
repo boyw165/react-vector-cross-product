@@ -1,0 +1,15 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  margin: 10px 5px;
+}
+
+.fixed-pos {
+  position: absolute;
+  display: block;
+  border: 1px solid grey;
+}
