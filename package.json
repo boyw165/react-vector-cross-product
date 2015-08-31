@@ -8,6 +8,7 @@
     "email": "boyw165@gmail.com"
   },
   "scripts": {
+    "dev" : "make dev",
     "start": "make all"
   },
   "engines": {

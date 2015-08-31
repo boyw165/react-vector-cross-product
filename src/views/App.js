@@ -17,6 +17,9 @@ export default class App extends React.Component {
   }
 
   render() {
+    var canvasWidth = this.props.width || 800;
+    var canvasHeight = this.props.height || 400;
+
     return (
       <div>
         <h1>Vector Cross Product Test</h1>
@@ -34,7 +37,8 @@ export default class App extends React.Component {
                           onChange={this._onDrawModeChange.bind(this)} />
           </li>
         </ul>
-        <AppCanvas width='800' height='400'/>
+        <AppCanvas width={canvasWidth} height={canvasHeight}
+                   isDrawPolygon={this.state.isDrawPolygon}/>
       </div>
     );
   }
