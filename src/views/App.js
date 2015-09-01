@@ -12,7 +12,7 @@ export default class App extends React.Component {
     super(props);
 
     this.state = {
-      isDrawPolygon: true
+      isDrawPolygon: false
     };
   }
 
@@ -23,6 +23,7 @@ export default class App extends React.Component {
     return (
       <div>
         <h1>Vector Cross Product Test</h1>
+        <p>Use cross-product to tell whether a given point is inside or outside the convex polygon.<br/> P.S. NOT appropriate for concave polygon.</p>
         <ul>
           <li>
             <SwitchButton name='draw-polygon'
